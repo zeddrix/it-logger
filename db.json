@@ -1,25 +1,39 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Changed hard drive on workstation 005",
+      "message": "Changed network card in server 007",
       "attention": false,
-      "date": "03-02-2021",
-      "tech": "Sam Gamgee"
+      "tech": "Sara Wilson",
+      "date": "2021-01-05T10:55:59.220Z",
+      "id": 1
     },
     {
-      "id": 2,
-      "message": "Workstation 007 not posting",
+      "message": "test",
       "attention": true,
-      "date": "03-02-2020",
-      "tech": "John Doe"
+      "tech": "Sam Gamgee",
+      "date": "2021-01-05T11:01:08.113Z",
+      "id": 2
     },
     {
-      "id": 3,
-      "message": "Changed mermory on workstation 050",
+      "message": "test",
       "attention": false,
-      "date": "03-22-2021",
-      "tech": "Sara Wilson"
+      "tech": "Sam Gamgee",
+      "date": "2021-01-05T11:01:30.452Z",
+      "id": 3
+    },
+    {
+      "message": "Hard drive failed in workstation 002",
+      "attention": true,
+      "tech": "Sam Gamgee",
+      "date": "2021-01-05T11:02:05.398Z",
+      "id": 4
+    },
+    {
+      "message": "1122 wireless down",
+      "attention": true,
+      "tech": "John Doe",
+      "date": "2021-01-05T11:03:02.367Z",
+      "id": 5
     }
   ],
   "techs": [
