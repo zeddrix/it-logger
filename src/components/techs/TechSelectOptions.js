@@ -21,9 +21,9 @@ TechSelectOptions.propTypes = {
   getTechs: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = state => ({
   tech: state.tech
-};
+});
 
 export default connect(mapStateToProps, { getTechs })
   (TechSelectOptions);
