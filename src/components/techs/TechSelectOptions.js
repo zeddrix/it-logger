@@ -7,7 +7,7 @@ const TechSelectOptions = ({ getTechs, tech: { techs, loading } }) => {
   useEffect(() => {
     getTechs();
     // es-lint-disable-next-line
-  }, [])
+  }, [getTechs])
   return (
     !loading && techs !== null && techs.map(
       t => <option key={t.id} value={`${t.firstName} ${t.lastName}`}>
