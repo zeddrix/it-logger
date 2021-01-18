@@ -1,24 +1,38 @@
 {
   "logs": [
     {
-      "message": "Changed network card in server 007",
-      "attention": false,
+      "message": "Testing",
+      "attention": true,
       "tech": "Sara Wilson",
-      "date": "2021-01-05T10:55:59.220Z",
+      "date": "2021-01-18T23:33:53.446Z",
       "id": 1
     },
     {
-      "id": 4,
-      "message": "Fixed hard drive in workstation 002",
+      "message": "Testing #2",
       "attention": false,
-      "tech": "John Doe",
-      "date": "2021-01-05T21:09:27.275Z"
+      "tech": "Zeddrix Fabian",
+      "date": "2021-01-18T23:34:08.453Z",
+      "id": 2
     },
     {
-      "message": "1122 wireless down",
+      "message": "Testing #3",
       "attention": true,
-      "tech": "John Doe",
-      "date": "2021-01-05T11:03:02.367Z",
+      "tech": "Sara Wilson",
+      "date": "2021-01-18T23:34:41.213Z",
+      "id": 3
+    },
+    {
+      "message": "Testing #4",
+      "attention": true,
+      "tech": "Zeddrix Fabian",
+      "date": "2021-01-18T23:35:28.253Z",
+      "id": 4
+    },
+    {
+      "message": "Testing Number Five!",
+      "attention": true,
+      "tech": "Zeddrix Fabian",
+      "date": "2021-01-18T23:40:03.385Z",
       "id": 5
     }
   ],
