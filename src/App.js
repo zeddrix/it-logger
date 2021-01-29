@@ -13,25 +13,25 @@ import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 const App = () => {
-  useEffect(() => {
-    M.AutoInit();
-  });
+	useEffect(() => {
+		M.AutoInit();
+	});
 
-  return (
-    <Provider store={store}>
-      <Fragment>
-        <SearchBar />
-        <div className="container">
-          <AddBtn />
-          <AddLogModal />
-          <EditLogModal />
-          <AddTechModal />
-          <TechListModal />
-          <Logs />
-        </div>
-      </Fragment>
-    </Provider>
-  );
-}
+	return (
+		<Provider store={store}>
+			<Fragment>
+				<SearchBar />
+				<div className='container'>
+					<AddBtn />
+					<AddLogModal />
+					<EditLogModal />
+					<AddTechModal />
+					<TechListModal />
+					<Logs />
+				</div>
+			</Fragment>
+		</Provider>
+	);
+};
 
 export default App;
