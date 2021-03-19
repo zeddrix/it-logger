@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import TechSelectOptions from '../techs/TechSelectOptions';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addLog } from '../../actions/logActions';
-import TechSelectOptions from '../techs/TechSelectOptions';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 const AddLogModal = ({ addLog }) => {
@@ -25,6 +25,7 @@ const AddLogModal = ({ addLog }) => {
 
 			M.toast({ html: `Log added by ${tech}` });
 
+			// Clear Fields
 			setMessage('');
 			setTech('');
 			setAttention(false);
@@ -48,6 +49,7 @@ const AddLogModal = ({ addLog }) => {
 						</label>
 					</div>
 				</div>
+
 				<div className='row'>
 					<div className='input-field'>
 						<select
@@ -55,11 +57,14 @@ const AddLogModal = ({ addLog }) => {
 							value={tech}
 							className='browser-default'
 							onChange={(e) => setTech(e.target.value)}>
-							<option disabled>Select Technician</option>
+							<option value='' disabled>
+								Select Technician
+							</option>
 							<TechSelectOptions />
 						</select>
 					</div>
 				</div>
+
 				<div className='row'>
 					<div className='input-field'>
 						<p>
@@ -80,8 +85,8 @@ const AddLogModal = ({ addLog }) => {
 			<div className='modal-footer'>
 				<a
 					href='#!'
-					className='modal-close waves-effect blue btn'
-					onClick={onSubmit}>
+					onClick={onSubmit}
+					className='modal-close waves-effect blue waves-light btn'>
 					Enter
 				</a>
 			</div>

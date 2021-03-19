@@ -72,7 +72,7 @@ export const deleteTech = (id) => async (dispatch) => {
 	}
 };
 
-//Set loading to true
+// Set loading to true
 export const setLoading = () => {
 	return {
 		type: SET_LOADING,

@@ -10,6 +10,7 @@ import {
 	SEARCH_LOGS,
 } from './types';
 
+// Get logs from server
 export const getLogs = () => async (dispatch) => {
 	try {
 		setLoading();
@@ -29,6 +30,7 @@ export const getLogs = () => async (dispatch) => {
 	}
 };
 
+// Add new log
 export const addLog = (log) => async (dispatch) => {
 	try {
 		setLoading();
@@ -54,6 +56,7 @@ export const addLog = (log) => async (dispatch) => {
 	}
 };
 
+// Delete log from server
 export const deleteLog = (id) => async (dispatch) => {
 	try {
 		setLoading();
@@ -101,7 +104,7 @@ export const updateLog = (log) => async (dispatch) => {
 	}
 };
 
-// Search logs on server
+// Search server logs
 export const searchLogs = (text) => async (dispatch) => {
 	try {
 		setLoading();
@@ -136,7 +139,7 @@ export const clearCurrent = () => {
 	};
 };
 
-// set loading to true
+// Set loading to true
 export const setLoading = () => {
 	return {
 		type: SET_LOADING,

@@ -16,7 +16,10 @@ const AddTechModal = ({ addTech }) => {
 				firstName,
 				lastName,
 			});
+
 			M.toast({ html: `${firstName} ${lastName} was added as a tech` });
+
+			// Clear Fields
 			setFirstName('');
 			setLastName('');
 		}
@@ -39,6 +42,7 @@ const AddTechModal = ({ addTech }) => {
 						</label>
 					</div>
 				</div>
+
 				<div className='row'>
 					<div className='input-field'>
 						<input
@@ -56,8 +60,8 @@ const AddTechModal = ({ addTech }) => {
 			<div className='modal-footer'>
 				<a
 					href='#!'
-					className='modal-close waves-effect blue btn'
-					onClick={onSubmit}>
+					onClick={onSubmit}
+					className='modal-close waves-effect blue waves-light btn'>
 					Enter
 				</a>
 			</div>
@@ -65,7 +69,7 @@ const AddTechModal = ({ addTech }) => {
 	);
 };
 
-AddTechModal.prototypes = {
+AddTechModal.propTypes = {
 	addTech: PropTypes.func.isRequired,
 };
 

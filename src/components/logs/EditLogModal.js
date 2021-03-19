@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import M from 'materialize-css/dist/js/materialize.min.js';
+import TechSelectOptions from '../techs/TechSelectOptions';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import TechSelectOptions from '../techs/TechSelectOptions';
+import M from 'materialize-css/dist/js/materialize.min.js';
 import { updateLog } from '../../actions/logActions';
 
 const EditLogModal = ({ current, updateLog }) => {
@@ -33,6 +33,7 @@ const EditLogModal = ({ current, updateLog }) => {
 			updateLog(updLog);
 			M.toast({ html: `Log updated by ${tech}` });
 
+			// Clear Fields
 			setMessage('');
 			setTech('');
 			setAttention(false);
@@ -53,6 +54,7 @@ const EditLogModal = ({ current, updateLog }) => {
 						/>
 					</div>
 				</div>
+
 				<div className='row'>
 					<div className='input-field'>
 						<select
@@ -60,11 +62,14 @@ const EditLogModal = ({ current, updateLog }) => {
 							value={tech}
 							className='browser-default'
 							onChange={(e) => setTech(e.target.value)}>
-							<option disabled>Select Technician</option>
+							<option value='' disabled>
+								Select Technician
+							</option>
 							<TechSelectOptions />
 						</select>
 					</div>
 				</div>
+
 				<div className='row'>
 					<div className='input-field'>
 						<p>
@@ -85,8 +90,8 @@ const EditLogModal = ({ current, updateLog }) => {
 			<div className='modal-footer'>
 				<a
 					href='#!'
-					className='modal-close waves-effect blue btn'
-					onClick={onSubmit}>
+					onClick={onSubmit}
+					className='modal-close waves-effect blue waves-light btn'>
 					Enter
 				</a>
 			</div>
